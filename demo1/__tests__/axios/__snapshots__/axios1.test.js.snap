@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserSearch should render user search correctly 1`] = `ShallowWrapper {}`;

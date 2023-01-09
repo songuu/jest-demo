@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList should render user list correctly 1`] = `ShallowWrapper {}`;

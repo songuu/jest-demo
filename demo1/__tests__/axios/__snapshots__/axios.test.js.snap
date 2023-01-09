@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList should render user list correctly 1`] = `ShallowWrapper {}`;
+
+exports[`UserList should render user list correctly 2`] = `ShallowWrapper {}`;
+
+exports[`UserList1 should render user list correctly 1`] = `ShallowWrapper {}`;
+
+exports[`UserSearch should render user search correctly 1`] = `ShallowWrapper {}`;
