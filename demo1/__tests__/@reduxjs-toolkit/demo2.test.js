@@ -56,15 +56,16 @@ export const {
   updateDataError,
 } = dataSlice.actions
 
+const allData = [
+  { id: 1, title: 'Title 1' },
+  { id: 2, title: 'Title 2' },
+]
+
 export const fetchData = () => async (dispatch) => {
   try {
-    const data = [
-      { id: 1, title: 'Title 1' },
-      { id: 2, title: 'Title 2' },
-    ]
     dispatch(fetchDataRequest())
     // const response = await axios.get('http://example.com/data')
-    return Promise.resolve(dispatch(fetchDataSuccess(data)))
+    return Promise.resolve(dispatch(fetchDataSuccess(allData)))
   } catch (error) {
     dispatch(fetchDataError(error))
   }
@@ -73,11 +74,11 @@ export const fetchData = () => async (dispatch) => {
 export const updateData = (data) => async (dispatch) => {
   try {
     dispatch(updateDataRequest())
-    const response = await axios.patch(
+    /* const response = await axios.patch(
       `http://example.com/data/${data.id}`,
       data
-    )
-    dispatch(updateDataSuccess(response.data))
+    ) */
+    return Promise.resolve(dispatch(updateDataSuccess(data)))
   } catch (error) {
     dispatch(updateDataError(error))
   }
